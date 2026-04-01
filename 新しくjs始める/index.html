@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSテスト</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>色が変わるよ</h1>
+    <button id="colorButton">押してみて</button>
+
+    <script>
+      const button = document.getElementById("colorButton");
+
+      button.addEventListener("mouseover", function () {
+        document.body.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>
